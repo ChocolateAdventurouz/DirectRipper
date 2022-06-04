@@ -2,7 +2,6 @@
 #include <dirent.h>
 #include <sys/types.h>
 #include <stdlib.h>
-#include "lame.h"
 int main(){
   int numOfTracks;
   DIR  *dip;
