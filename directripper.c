@@ -12,11 +12,11 @@ int main(){
      printf("[-] Audio Disc is not found on sr0. \n");
   }
   else {
-		printf("[+] Audio CD Found \n");
+      printf("[+] Audio CD Found \n");
       FILE *fp = popen("cd /run/user/1000/gvfs/cdda:host=sr0 && ls | wc -l", "r");
       fscanf(fp, "%d", &numOfTracks);
       pclose(fp);
-		closedir(dip);
+      closedir(dip);
       printf("[*] Number Of Tracks: %d \n", numOfTracks);
       DirectRip(numOfTracks);
 	}
